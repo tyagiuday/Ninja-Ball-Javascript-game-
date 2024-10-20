@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Ninja Javascript Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/40380f608f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Game Heading -->
+    <div class="gameHeading">
+        <p>Ball Ninja Javascript Game</p>
+    </div>
+
+    <!-- Main Canvas -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Front Body -->
+    <div class="startGame" id="startGame">
+        <div class="home">
+            <h1>Ball Ninja <br> <span>Uday Veer Singh</span></h1>
+            <button id="startGameBtn">Play <i class="fa-solid fa-gamepad"></i></button>
+            <p>Your High Score: <span id="homeHighScore"></span></p>
+        </div>
+      
+        
+       
+    </div>
+
+    <!-- Alert Count Down Timer  -->
+    <div class="countDown" id="countDownContainer">
+        <h1></h1>
+    </div>
+
+    <!-- In Game Body -->
+    <div id="inGameContainer">
+        <div class="scoreDiv">
+            <p>Score: <span id="score"></span></p>
+            <p>High Score: <span id="highScore"></span></p>
+        </div>
+        <div class="gameCountTime">
+            <h1 id="gameMinuteAndSecond">00 : 00</h1>
+        </div>
+        <div id="strikeCountDiv">
+            <h1 class="strikeCount">1x</h1>
+        </div>
+    </div>
+
+    <div id="gameEndDiv">
+        <div class="gameEndContainer">
+            <p>Your Score: <span id="endGameScore"></span></p>
+            <button id="returnHome">Return Home<i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
